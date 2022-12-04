@@ -1,0 +1,15 @@
+<div data-controller="binding" data-binding-colors-value='["green","blue"]'>
+  <p class="mb-2">
+    <span title="Hello World">
+      Hover your mouse over me for a few seconds to see my dynamically bound title!
+    </span>
+  </p>
+
+  <p class="text-red-600 mb-2" data-binding-target="textOne" data-action="click->binding#toggleRed">
+    This should be red... but click me to toggle it.
+  </p>
+
+  <p class="text-green-600" data-binding-target="textTwo" data-action="click->binding#toggleColor">
+    This should be green, and should toggle between green and blue on click.
+  </p>
+</div>
